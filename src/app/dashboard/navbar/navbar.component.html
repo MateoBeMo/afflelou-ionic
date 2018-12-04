@@ -1,0 +1,71 @@
+<div class="fixed-nav bg-custom" id="page-top">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-custom fixed-top" id="mainNav">
+        <!-- <a class="navbar-brand" href="index.html">AfflelouApp</a> -->
+        <a href="dashboard/first-view.html"><img class="navbar-brand" src="assets/logo-afflelou.svg" alt="Logo"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="isCollapsed">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" [ngbCollapse]="!isCollapsed">
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['first-view']">
+                        <span class="nav-link-text big-font">Resultados Generales</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Examples" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['second-view']">
+                        <span class="nav-link-text big-font">Ventas</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="DetalleValoracion" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['detalle-valoracion/1']">
+                        <span class="nav-link-text">Detalle Valoración</span>
+                    </a>
+                </li> -->
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Quiz" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['quiz']">
+                        <span class="nav-link-text big-font">Quiz</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul> -->
+            <ul class="navbar-nav ml-auto">
+                <li *ngIf="notificaciones?.length > 0" class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link alerts dropdown-toggle mt-lg-2 mr-lg-1" ngbDropdownToggle id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-bell big-font"></i>
+                        <span class="d-lg-none">Alerts
+                <span class="badge badge-pill badge-warning">{{ notificaciones.length }}</span>
+                        </span>
+                        <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+                    </a>
+                    <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">Nuevas alertas:</h6>
+                        <div class="dropdown-divider"></div>
+                        <a *ngFor="let n of notificaciones" [routerLink]="['detalle-valoracion', n.id]" class="dropdown-item">
+                            <span class="text-danger"> 
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Valoración Negativa</strong>
+                </span>
+                            <span class="small float-right text-muted">{{ n.fecha }}</span>
+                            <div class="dropdown-message small" style="color:black">Se ha votado negativamente en una encuesta</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item small">Ver todas</a>
+                    </div>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#exampleModal">
+                    <a class="nav-link logout big-font" (click)="logOut()"><i class="fa fa-fw fa-sign-out"></i>Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

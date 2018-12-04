@@ -1,0 +1,41 @@
+$primary-color: white;
+$second-color: #C3A269;
+$second-color-hover: rgb(133, 96, 28);
+$background-color: rgb(228, 230, 231);
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    background: $primary-color !important;
+}
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+    background-color: $second-color;
+}
+
+@media (max-width: 992px) {
+    #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+        text-decoration: underline;
+        text-decoration-color: #C3A269;
+        text-decoration-style: double;
+        background-color: $primary-color;
+    }
+}
+
+.dropdown-message {
+    width: 220px!important;
+    text-overflow: ellipsis;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.nav-link.logout .nav-link.alerts {
+    margin-top: 2em;
+}
+
+.navbar-brand {
+    margin-top: 1em;
+}
+
+.navbar-toggler {
+    background-color: $second-color;
+}

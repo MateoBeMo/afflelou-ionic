@@ -6,6 +6,9 @@ import { HomePage } from '../home/home.page';
 import { AboutPage } from '../about/about.page';
 import { ContactPage } from '../contact/contact.page';
 
+import { QuizComponent } from '../quiz/quiz.component';
+
+
 const routes: Routes = [
   {
     path: 'tabs',
@@ -13,13 +16,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/tabs/(home:home)',
+        redirectTo: '/tabs/(quiz:quiz)',
         pathMatch: 'full',
       },
       {
-        path: 'home',
-        outlet: 'home',
-        component: HomePage
+        path: 'quiz',
+        outlet: 'quiz',
+        component: QuizComponent
       },
       {
         path: 'about',
@@ -35,7 +38,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/(home:home)',
+    redirectTo: '/tabs/(quiz:quiz)',
     pathMatch: 'full'
   }
 ];

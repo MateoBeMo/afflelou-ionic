@@ -1,0 +1,13 @@
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-lg-12  mr-top-custom" *ngIf="barChartData">
+            <app-bar-chart [colors]="barChartColor" [barChartLabels]="barChartLabels" [barChartType]="barChartType" [barChartLegend]="barChartLegend" [barChartData]="barChartData"></app-bar-chart>
+        </div>
+        <div class="col-xl-6 col-lg-12  mr-top-custom">
+            <app-pie-chart [colors]="pchartColors" [pieChartData]="pieChartData" [pieChartLabels]="pieChartLabels" (onClickChart)="onClickChart($event)"></app-pie-chart>
+        </div>
+    </div>
+</div>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button> -->

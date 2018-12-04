@@ -1,0 +1,28 @@
+<div class="container mr-top-custom-3" align="center">
+    <h3>
+        Últimas ventas
+    </h3>
+    <!-- <ngx-datatable class="bootstrap" [rows]="rows" [loadingIndicator]="loadingIndicator" [columns]="columns" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [reorderable]="reorderable">
+    </ngx-datatable> -->
+    <input type='text' style='padding:8px;margin:15px auto;width:30%;' [(ngModel)]="search" placeholder='Filtrar por numero de venta...' (keyup)='updateFilter(search)' />
+    <ngx-datatable class="bootstrap" [rows]="rows" [loadingIndicator]="loadingIndicator" [columns]="columns" [columnMode]="'force'" [headerHeight]="40" [footerHeight]="40" [limit]="10" [rowHeight]="'auto'" [reorderable]="reorderable">
+
+    </ngx-datatable>
+</div>
+<!-- <h3>
+    Using alert component example</h3>
+<form>
+    <label class="radio-inline">
+    <input type="radio" name="optradio" value="success" [(ngModel)]="type"  >Success
+  </label>
+    <label class="radio-inline">
+    <input type="radio" name="optradio" value="info" [(ngModel)]="type" >Info
+  </label>
+    <label class="radio-inline">
+    <input type="radio" name="optradio" value="warning" [(ngModel)]="type" >Warning
+  </label>
+    <label class="radio-inline">
+    <input type="radio" name="optradio" value="danger" [(ngModel)]="type" >Danger
+  </label>
+</form>
+<app-alert type="{{type}}"></app-alert> -->

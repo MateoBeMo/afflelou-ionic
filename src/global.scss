@@ -9,3 +9,73 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+
+// _app-component.scss
+$primary-color: white;
+$second-color: #C3A269;
+$second-color-hover: rgb(133, 96, 28);
+$background-color: rgb(228, 230, 231);
+//#63003A;
+//#BC77A2;
+
+.body {
+font-family: Gotham,sans-serif;
+}
+.mr-top-custom-22 {
+    margin-top: 22em;
+}
+
+.mr-top-custom-10 {
+    margin-top: 10em;
+}
+
+.mr-top-custom-5 {
+    margin-top: 5em;
+}
+
+.mr-top-custom-3 {
+    margin-top: 3em;
+}
+
+.mr-top-custom {
+    margin-top: 15em !important;
+}
+
+.bg-custom {
+    background: $primary-color;
+}
+
+.btn-lg {
+    font-size: 40px;
+}
+
+.select-lg {
+    height: 2em !important;
+    font-size: 30px;
+}
+
+.fs-20 {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: $second-color !important;
+    color: white;
+    border: black;
+}
+
+.btn-primary:active {
+    background-color: $second-color-hover !important;
+}
+
+.big-font {
+    font-size: 1.5em;
+}

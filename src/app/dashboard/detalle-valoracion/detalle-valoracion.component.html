@@ -1,0 +1,22 @@
+<div class="container" style="margin-top:7em;">
+    <div *ngIf="resultado" class="card text-center">
+        <div class="card-header">
+            Número de Venta: {{resultado.numeroVenta}}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Personal: </h5>
+            <p class="card-text">Vendedor: {{resultado.vendedor}}</p>
+            <p class="card-text">Optometrista: {{resultado.optometrista}}</p>
+            <p class="card-text">Persona que entrega la gafa: {{resultado.entregaGafa}}</p>
+            <span *ngIf="respuestas?.length > 0">
+                <h5 class="card-title">Respuestas negativas: </h5>
+                <p *ngFor="let respuesta of respuestas" class="card-text"> {{respuesta.namePregunta}} : {{respuesta.nameRespuesta}}</p>
+                <a class="btn btn-primary" (click)="visto()">Visto</a>
+            </span>
+
+        </div>
+        <div class="card-footer text-muted">
+            {{ resultado.fecha }}
+        </div>
+    </div>
+</div>

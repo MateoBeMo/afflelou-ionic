@@ -32,9 +32,17 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input": "src/assets/sb-admin.min.css"
+              },
+              {
+                "input": "./node_modules/font-awesome/css/font-awesome.css"  
               }
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {

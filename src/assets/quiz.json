@@ -1,0 +1,175 @@
+{
+    "id": 1,
+    "name": "cuestionario Afflelou",
+    "description": "cuestionario de afflelou para saber el grado de conformidad del cliente",
+    "questions": [{
+            "id": 1010,
+            "name": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+            "questionTypeId": 1,
+            "options": [{
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Muy pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Normal",
+                    "selected": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Buena",
+                    "selected": false
+                },
+                {
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "Excelente",
+                    "selected": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Star Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1011,
+            "name": "¿La graduación que te hicimos te pareció completa y profesional?",
+            "questionTypeId": 1,
+            "options": [{
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Muy pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Normal",
+                    "selected": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Buena",
+                    "selected": false
+                },
+                {
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "Excelente",
+                    "selected": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Star Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1012,
+            "name": "¿Te dieron varias opciones de presupuesto?",
+            "questionTypeId": 2,
+            "options": [{
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "SÍ",
+                    "selected": false
+                },
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "NO",
+                    "selected": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Yes or Not Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1013,
+            "name": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+            "questionTypeId": 2,
+            "options": [{
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "SÍ",
+                    "selected": false
+                },
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "NO",
+                    "selected": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Yes or Not Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1014,
+            "name": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+            "questionTypeId": 1,
+            "options": [{
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Muy pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Pobre",
+                    "selected": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Normal",
+                    "selected": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Buena",
+                    "selected": false
+                },
+                {
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "Excelente",
+                    "selected": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Star Choice",
+                "isActive": true
+            }
+        }
+    ]
+}

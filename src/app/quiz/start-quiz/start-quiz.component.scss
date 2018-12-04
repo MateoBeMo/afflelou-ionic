@@ -1,0 +1,106 @@
+$colorEstrella: #C0A471;
+$colorHover: rgb(212, 155, 47);
+.star-rating {
+    font-family: 'FontAwesome';
+    margin: 50px auto;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    >fieldset {
+        border: none;
+        display: inline-block;
+        &:not(:checked) {
+            >span>input {
+                position: absolute;
+                top: -9999px;
+                clip: rect(0, 0, 0, 0);
+            }
+            >span>label {
+                float: right;
+                width: 1em;
+                padding: 0 .05em;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 700%;
+                color: $colorEstrella;
+                &:before {
+                    content: '\f006  ';
+                }
+                &:hover,
+                &:hover~label {
+                    color: $colorHover;
+                    text-shadow: 0 0 3px $colorHover;
+                    &:before {
+                        content: '\f005  ';
+                    }
+                }
+            }
+        }
+        // > input:checked {
+        //   & ~ label {
+        //     &:before {
+        //       content: '\f005  ';
+        //     }
+        //   }    
+        // }    
+        >label:active {
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+.badge {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+}
+
+.yesno {
+    font-size: 40px;
+    display: block;
+    margin: 40px;
+    padding: 20px 50px;
+    background-color: $colorEstrella;
+    border-radius: 7px;
+    color: white;
+    &:hover {
+        background-color: $colorHover;
+        cursor: pointer;
+    }
+}
+
+.yesno input {
+    display: none;
+}
+
+.question,
+.result {
+    font-size: 1.5em;
+}
+
+body {
+    background: #262829;
+    color: #95a5a6;
+    font-family: 'Raleway';
+    text-align: center;
+    p {
+        font-size: 1.6em;
+        margin: auto;
+        width: 80%;
+    }
+    a {
+        color: $colorEstrella;
+    }
+}
+
+body a,
+p,
+label,
+div {
+    color: black;
+}
