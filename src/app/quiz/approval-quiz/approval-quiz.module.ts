@@ -8,7 +8,7 @@ import { ApprovalQuizComponent } from './approval-quiz.component';
   imports: [
     CommonModule,
     FormsModule,
-    routing
+    routing,
   ],
   declarations: [ApprovalQuizComponent]
 })

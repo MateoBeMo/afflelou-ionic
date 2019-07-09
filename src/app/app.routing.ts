@@ -4,8 +4,7 @@ import { LoggedInGuard } from './logged-in.guard';
 
 
 export const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
-  // { path: '', redirectTo: 'quiz', pathMatch: 'full'},
+  { path: '', redirectTo: 'quiz', pathMatch: 'full'},
   // { path: '**', redirectTo: 'login', pathMatch: 'full'},
 ];
 

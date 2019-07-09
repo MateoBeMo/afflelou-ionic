@@ -13,3 +13,10 @@
 .card-register {
     max-width: 40rem;
 }
+
+:host {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}

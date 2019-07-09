@@ -24,7 +24,11 @@ $background-color: rgb(228, 230, 231);
 //#BC77A2;
 
 .body {
-font-family: Gotham,sans-serif;
+    font-family: Gotham,sans-serif;
+    height: 100%;
+}
+.quiz-view {
+    margin: auto;
 }
 .mr-top-custom-22 {
     margin-top: 22em;

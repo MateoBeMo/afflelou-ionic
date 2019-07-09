@@ -4,7 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 
 // noinspection TypeScriptValidateTypes
 export const routes: Routes = [ {
-  path: 'quiz/start-quiz',
+  path: '',
   component: StartQuizComponent
 }];
 

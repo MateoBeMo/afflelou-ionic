@@ -4,3 +4,9 @@ label,
 div {
     color: black;
 }
+
+.btn {
+   &:not(:last-child) {
+        margin-right: 2em;
+   }
+}
